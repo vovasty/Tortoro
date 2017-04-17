@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD1AD6271EA5666A0094E280 /* Tortoro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD61D1EA5666A0094E280 /* Tortoro.framework */; };
+		CD1AD65D1EA567280094E280 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD64B1EA567280094E280 /* libcrypto.a */; };
+		CD1AD65E1EA567280094E280 /* libcurve25519_donna.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD64C1EA567280094E280 /* libcurve25519_donna.a */; };
+		CD1AD65F1EA567280094E280 /* libed25519_donna.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD64D1EA567280094E280 /* libed25519_donna.a */; };
+		CD1AD6601EA567280094E280 /* libed25519_ref10.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD64E1EA567280094E280 /* libed25519_ref10.a */; };
+		CD1AD6611EA567280094E280 /* libevent_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD64F1EA567280094E280 /* libevent_core.a */; };
+		CD1AD6621EA567280094E280 /* libevent_extra.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD6501EA567280094E280 /* libevent_extra.a */; };
+		CD1AD6631EA567280094E280 /* libevent_pthreads.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD6511EA567280094E280 /* libevent_pthreads.a */; };
+		CD1AD6641EA567280094E280 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD6521EA567280094E280 /* libevent.a */; };
+		CD1AD6651EA567280094E280 /* libkeccak-tiny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD6531EA567280094E280 /* libkeccak-tiny.a */; };
+		CD1AD6661EA567280094E280 /* libor-crypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD6541EA567280094E280 /* libor-crypto.a */; };
+		CD1AD6671EA567280094E280 /* libor-ctime.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD6551EA567280094E280 /* libor-ctime.a */; };
+		CD1AD6681EA567280094E280 /* libor-event.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD6561EA567280094E280 /* libor-event.a */; };
+		CD1AD6691EA567280094E280 /* libor-trunnel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD6571EA567280094E280 /* libor-trunnel.a */; };
+		CD1AD66A1EA567280094E280 /* libor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD6581EA567280094E280 /* libor.a */; };
+		CD1AD66C1EA567280094E280 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD65A1EA567280094E280 /* libssl.a */; };
+		CD1AD66D1EA567280094E280 /* libtor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD65B1EA567280094E280 /* libtor.a */; };
+		CD1AD66F1EA567970094E280 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1AD66E1EA567970094E280 /* libz.tbd */; };
+		CD1AD6881EA56F930094E280 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AD67D1EA56F930094E280 /* Commands.swift */; };
+		CD1AD6891EA56F930094E280 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AD67E1EA56F930094E280 /* Configuration.swift */; };
+		CD1AD68A1EA56F930094E280 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AD67F1EA56F930094E280 /* Error.swift */; };
+		CD1AD68C1EA56F930094E280 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AD6811EA56F930094E280 /* Result.swift */; };
+		CD1AD68D1EA56F930094E280 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AD6821EA56F930094E280 /* Socket.swift */; };
+		CD1AD68E1EA56F930094E280 /* tor.c in Sources */ = {isa = PBXBuildFile; fileRef = CD1AD6831EA56F930094E280 /* tor.c */; };
+		CD1AD68F1EA56F930094E280 /* tor.h in Headers */ = {isa = PBXBuildFile; fileRef = CD1AD6841EA56F930094E280 /* tor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD1AD6901EA56F930094E280 /* TorThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AD6851EA56F930094E280 /* TorThread.swift */; };
+		CD1AD6911EA56F930094E280 /* Tortoro.h in Headers */ = {isa = PBXBuildFile; fileRef = CD1AD6861EA56F930094E280 /* Tortoro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD1AD6921EA56F930094E280 /* Tortoro.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AD6871EA56F930094E280 /* Tortoro.swift */; };
+		CD1AD6981EA56FBE0094E280 /* CommandsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AD6941EA56FBE0094E280 /* CommandsTests.swift */; };
+		CD1AD6991EA56FBE0094E280 /* ConnectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AD6951EA56FBE0094E280 /* ConnectionTests.swift */; };
+		CD1AD69B1EA56FBE0094E280 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1AD6971EA56FBE0094E280 /* Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD1AD6281EA5666A0094E280 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD1AD6141EA5666A0094E280 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD1AD61C1EA5666A0094E280;
+			remoteInfo = Tortoro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CD1AD61D1EA5666A0094E280 /* Tortoro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tortoro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1AD6261EA5666A0094E280 /* TortoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TortoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1AD64A1EA567280094E280 /* libcrypto-tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcrypto-tvOS.a"; path = "lib/libcrypto-tvOS.a"; sourceTree = "<group>"; };
+		CD1AD64B1EA567280094E280 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = lib/libcrypto.a; sourceTree = "<group>"; };
+		CD1AD64C1EA567280094E280 /* libcurve25519_donna.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurve25519_donna.a; path = lib/libcurve25519_donna.a; sourceTree = "<group>"; };
+		CD1AD64D1EA567280094E280 /* libed25519_donna.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libed25519_donna.a; path = lib/libed25519_donna.a; sourceTree = "<group>"; };
+		CD1AD64E1EA567280094E280 /* libed25519_ref10.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libed25519_ref10.a; path = lib/libed25519_ref10.a; sourceTree = "<group>"; };
+		CD1AD64F1EA567280094E280 /* libevent_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_core.a; path = lib/libevent_core.a; sourceTree = "<group>"; };
+		CD1AD6501EA567280094E280 /* libevent_extra.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_extra.a; path = lib/libevent_extra.a; sourceTree = "<group>"; };
+		CD1AD6511EA567280094E280 /* libevent_pthreads.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent_pthreads.a; path = lib/libevent_pthreads.a; sourceTree = "<group>"; };
+		CD1AD6521EA567280094E280 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libevent.a; path = lib/libevent.a; sourceTree = "<group>"; };
+		CD1AD6531EA567280094E280 /* libkeccak-tiny.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libkeccak-tiny.a"; path = "lib/libkeccak-tiny.a"; sourceTree = "<group>"; };
+		CD1AD6541EA567280094E280 /* libor-crypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libor-crypto.a"; path = "lib/libor-crypto.a"; sourceTree = "<group>"; };
+		CD1AD6551EA567280094E280 /* libor-ctime.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libor-ctime.a"; path = "lib/libor-ctime.a"; sourceTree = "<group>"; };
+		CD1AD6561EA567280094E280 /* libor-event.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libor-event.a"; path = "lib/libor-event.a"; sourceTree = "<group>"; };
+		CD1AD6571EA567280094E280 /* libor-trunnel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libor-trunnel.a"; path = "lib/libor-trunnel.a"; sourceTree = "<group>"; };
+		CD1AD6581EA567280094E280 /* libor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libor.a; path = lib/libor.a; sourceTree = "<group>"; };
+		CD1AD6591EA567280094E280 /* libssl-tvOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libssl-tvOS.a"; path = "lib/libssl-tvOS.a"; sourceTree = "<group>"; };
+		CD1AD65A1EA567280094E280 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = lib/libssl.a; sourceTree = "<group>"; };
+		CD1AD65B1EA567280094E280 /* libtor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtor.a; path = lib/libtor.a; sourceTree = "<group>"; };
+		CD1AD66E1EA567970094E280 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CD1AD67D1EA56F930094E280 /* Commands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
+		CD1AD67E1EA56F930094E280 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		CD1AD67F1EA56F930094E280 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		CD1AD6801EA56F930094E280 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD1AD6811EA56F930094E280 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		CD1AD6821EA56F930094E280 /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		CD1AD6831EA56F930094E280 /* tor.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tor.c; sourceTree = "<group>"; };
+		CD1AD6841EA56F930094E280 /* tor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tor.h; sourceTree = "<group>"; };
+		CD1AD6851EA56F930094E280 /* TorThread.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TorThread.swift; sourceTree = "<group>"; };
+		CD1AD6861EA56F930094E280 /* Tortoro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tortoro.h; sourceTree = "<group>"; };
+		CD1AD6871EA56F930094E280 /* Tortoro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tortoro.swift; sourceTree = "<group>"; };
+		CD1AD6941EA56FBE0094E280 /* CommandsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTests.swift; sourceTree = "<group>"; };
+		CD1AD6951EA56FBE0094E280 /* ConnectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionTests.swift; sourceTree = "<group>"; };
+		CD1AD6961EA56FBE0094E280 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD1AD6971EA56FBE0094E280 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD1AD6191EA5666A0094E280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1AD66F1EA567970094E280 /* libz.tbd in Frameworks */,
+				CD1AD65D1EA567280094E280 /* libcrypto.a in Frameworks */,
+				CD1AD65E1EA567280094E280 /* libcurve25519_donna.a in Frameworks */,
+				CD1AD65F1EA567280094E280 /* libed25519_donna.a in Frameworks */,
+				CD1AD6601EA567280094E280 /* libed25519_ref10.a in Frameworks */,
+				CD1AD6611EA567280094E280 /* libevent_core.a in Frameworks */,
+				CD1AD6621EA567280094E280 /* libevent_extra.a in Frameworks */,
+				CD1AD6631EA567280094E280 /* libevent_pthreads.a in Frameworks */,
+				CD1AD6641EA567280094E280 /* libevent.a in Frameworks */,
+				CD1AD6651EA567280094E280 /* libkeccak-tiny.a in Frameworks */,
+				CD1AD6661EA567280094E280 /* libor-crypto.a in Frameworks */,
+				CD1AD6671EA567280094E280 /* libor-ctime.a in Frameworks */,
+				CD1AD6681EA567280094E280 /* libor-event.a in Frameworks */,
+				CD1AD6691EA567280094E280 /* libor-trunnel.a in Frameworks */,
+				CD1AD66A1EA567280094E280 /* libor.a in Frameworks */,
+				CD1AD66C1EA567280094E280 /* libssl.a in Frameworks */,
+				CD1AD66D1EA567280094E280 /* libtor.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1AD6231EA5666A0094E280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1AD6271EA5666A0094E280 /* Tortoro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD1AD6131EA5666A0094E280 = {
+			isa = PBXGroup;
+			children = (
+				CD1AD67C1EA56F930094E280 /* Source */,
+				CD1AD6931EA56FBE0094E280 /* Tests */,
+				CD1AD61E1EA5666A0094E280 /* Products */,
+				CD1AD6491EA567270094E280 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD1AD61E1EA5666A0094E280 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AD61D1EA5666A0094E280 /* Tortoro.framework */,
+				CD1AD6261EA5666A0094E280 /* TortoroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD1AD6491EA567270094E280 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AD66E1EA567970094E280 /* libz.tbd */,
+				CD1AD64A1EA567280094E280 /* libcrypto-tvOS.a */,
+				CD1AD64B1EA567280094E280 /* libcrypto.a */,
+				CD1AD64C1EA567280094E280 /* libcurve25519_donna.a */,
+				CD1AD64D1EA567280094E280 /* libed25519_donna.a */,
+				CD1AD64E1EA567280094E280 /* libed25519_ref10.a */,
+				CD1AD64F1EA567280094E280 /* libevent_core.a */,
+				CD1AD6501EA567280094E280 /* libevent_extra.a */,
+				CD1AD6511EA567280094E280 /* libevent_pthreads.a */,
+				CD1AD6521EA567280094E280 /* libevent.a */,
+				CD1AD6531EA567280094E280 /* libkeccak-tiny.a */,
+				CD1AD6541EA567280094E280 /* libor-crypto.a */,
+				CD1AD6551EA567280094E280 /* libor-ctime.a */,
+				CD1AD6561EA567280094E280 /* libor-event.a */,
+				CD1AD6571EA567280094E280 /* libor-trunnel.a */,
+				CD1AD6581EA567280094E280 /* libor.a */,
+				CD1AD6591EA567280094E280 /* libssl-tvOS.a */,
+				CD1AD65A1EA567280094E280 /* libssl.a */,
+				CD1AD65B1EA567280094E280 /* libtor.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD1AD67C1EA56F930094E280 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AD67D1EA56F930094E280 /* Commands.swift */,
+				CD1AD67E1EA56F930094E280 /* Configuration.swift */,
+				CD1AD67F1EA56F930094E280 /* Error.swift */,
+				CD1AD6801EA56F930094E280 /* Info.plist */,
+				CD1AD6811EA56F930094E280 /* Result.swift */,
+				CD1AD6821EA56F930094E280 /* Socket.swift */,
+				CD1AD6871EA56F930094E280 /* Tortoro.swift */,
+				CD1AD6851EA56F930094E280 /* TorThread.swift */,
+				CD1AD6861EA56F930094E280 /* Tortoro.h */,
+				CD1AD6841EA56F930094E280 /* tor.h */,
+				CD1AD6831EA56F930094E280 /* tor.c */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CD1AD6931EA56FBE0094E280 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CD1AD6941EA56FBE0094E280 /* CommandsTests.swift */,
+				CD1AD6951EA56FBE0094E280 /* ConnectionTests.swift */,
+				CD1AD6961EA56FBE0094E280 /* Info.plist */,
+				CD1AD6971EA56FBE0094E280 /* Utils.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CD1AD61A1EA5666A0094E280 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1AD6911EA56F930094E280 /* Tortoro.h in Headers */,
+				CD1AD68F1EA56F930094E280 /* tor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CD1AD61C1EA5666A0094E280 /* Tortoro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1AD6311EA5666A0094E280 /* Build configuration list for PBXNativeTarget "Tortoro" */;
+			buildPhases = (
+				CD1AD6181EA5666A0094E280 /* Sources */,
+				CD1AD6191EA5666A0094E280 /* Frameworks */,
+				CD1AD61A1EA5666A0094E280 /* Headers */,
+				CD1AD61B1EA5666A0094E280 /* Resources */,
+				CD1AD69E1EA574BB0094E280 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tortoro;
+			productName = Tortoro;
+			productReference = CD1AD61D1EA5666A0094E280 /* Tortoro.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD1AD6251EA5666A0094E280 /* TortoroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD1AD6341EA5666A0094E280 /* Build configuration list for PBXNativeTarget "TortoroTests" */;
+			buildPhases = (
+				CD1AD6221EA5666A0094E280 /* Sources */,
+				CD1AD6231EA5666A0094E280 /* Frameworks */,
+				CD1AD6241EA5666A0094E280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD1AD6291EA5666A0094E280 /* PBXTargetDependency */,
+			);
+			name = TortoroTests;
+			productName = TortoroTests;
+			productReference = CD1AD6261EA5666A0094E280 /* TortoroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD1AD6141EA5666A0094E280 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Aramzamzam LLC";
+				TargetAttributes = {
+					CD1AD61C1EA5666A0094E280 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QAKQ989T4B;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					CD1AD6251EA5666A0094E280 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = QAKQ989T4B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CD1AD6171EA5666A0094E280 /* Build configuration list for PBXProject "Tortoro" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CD1AD6131EA5666A0094E280;
+			productRefGroup = CD1AD61E1EA5666A0094E280 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD1AD61C1EA5666A0094E280 /* Tortoro */,
+				CD1AD6251EA5666A0094E280 /* TortoroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD1AD61B1EA5666A0094E280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1AD6241EA5666A0094E280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD1AD69E1EA574BB0094E280 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD1AD6181EA5666A0094E280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1AD6891EA56F930094E280 /* Configuration.swift in Sources */,
+				CD1AD68A1EA56F930094E280 /* Error.swift in Sources */,
+				CD1AD68D1EA56F930094E280 /* Socket.swift in Sources */,
+				CD1AD6901EA56F930094E280 /* TorThread.swift in Sources */,
+				CD1AD68E1EA56F930094E280 /* tor.c in Sources */,
+				CD1AD68C1EA56F930094E280 /* Result.swift in Sources */,
+				CD1AD6921EA56F930094E280 /* Tortoro.swift in Sources */,
+				CD1AD6881EA56F930094E280 /* Commands.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1AD6221EA5666A0094E280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD1AD6981EA56FBE0094E280 /* CommandsTests.swift in Sources */,
+				CD1AD6991EA56FBE0094E280 /* ConnectionTests.swift in Sources */,
+				CD1AD69B1EA56FBE0094E280 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD1AD6291EA5666A0094E280 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD1AD61C1EA5666A0094E280 /* Tortoro */;
+			targetProxy = CD1AD6281EA5666A0094E280 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD1AD62F1EA5666A0094E280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD1AD6301EA5666A0094E280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD1AD6321EA5666A0094E280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QAKQ989T4B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.aramzamzam.Tortoro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CD1AD6331EA5666A0094E280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = QAKQ989T4B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.aramzamzam.Tortoro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CD1AD6351EA5666A0094E280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QAKQ989T4B;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.aramzamzam.TortoroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CD1AD6361EA5666A0094E280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = QAKQ989T4B;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.aramzamzam.TortoroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD1AD6171EA5666A0094E280 /* Build configuration list for PBXProject "Tortoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1AD62F1EA5666A0094E280 /* Debug */,
+				CD1AD6301EA5666A0094E280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD1AD6311EA5666A0094E280 /* Build configuration list for PBXNativeTarget "Tortoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1AD6321EA5666A0094E280 /* Debug */,
+				CD1AD6331EA5666A0094E280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CD1AD6341EA5666A0094E280 /* Build configuration list for PBXNativeTarget "TortoroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD1AD6351EA5666A0094E280 /* Debug */,
+				CD1AD6361EA5666A0094E280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD1AD6141EA5666A0094E280 /* Project object */;
+}
