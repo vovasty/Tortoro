@@ -242,7 +242,7 @@ public class Tortoro {
     ///
     /// - parameter handler: result handler
     public func reload(handler: @escaping (Result<Void>) -> Void) {
-        send(priority: .veryHigh, command: "SIGNAL", arguments: ["RELOAD"]) { (result) in
+        send(priority: .veryHigh, command: "SIGNAL", arguments: ["HUP"]) { (result) in
             switch result {
             case .failure(let error):
                 handler(Result<Void>.failure(error))
